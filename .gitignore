@@ -1,0 +1,34 @@
+.idea
+apache-tomcat-8.5.93-src/target
+
+apache-tomcat-8.5.93/logs
+nbproject
+output
+# Next line commented out, because test/webapp-virtual-library and
+# test/webapp-virtual-webapp use it:
+# target
+apache-tomcat-8.5.93-src/work
+apache-tomcat-8.5.93-src/build.properties
+apache-tomcat-8.5.93-src/mvn.properties
+apache-tomcat-8.5.93-src/.ant-targets-build.xml
+apache-tomcat-8.5.93-src/.checkstyle
+apache-tomcat-8.5.93-src/.classpath
+apache-tomcat-8.5.93-src/.externalToolBuilders
+apache-tomcat-8.5.93-src/.fbprefs
+apache-tomcat-8.5.93-src/.project
+apache-tomcat-8.5.93-src/.settings
+apache-tomcat-8.5.93-src/.vscode
+*.iml
+*.ipr
+*.iws
+*.asc
+*.jj
+*.tmp
+apache-tomcat-8.5.93-src/maven-resolver-ant-tasks-*.jar
+apache-tomcat-8.5.93-src/thumbs.db
+apache-tomcat-8.5.93-src/Thumbs.db
+apache-tomcat-8.5.93-src/bin/setenv.*
+apache-tomcat-8.5.93-src/java/org/apache/catalina/startup/catalina.properties
+apache-tomcat-8.5.93-src/modules/jdbc-pool/bin
+apache-tomcat-8.5.93-src/modules/jdbc-pool/includes
+apache-tomcat-8.5.93-src/webapps/docs/jdbc-pool.xml
