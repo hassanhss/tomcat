@@ -1,8 +1,31 @@
+# 源码调试步骤
+## 1.tomcat官方网站下载core和source代码
+## 2.在指定目录创建一个文件夹，比如tomcat，把下载的core和source解压放到创建好的文件夹中
+## 3.在tomcat目录下创建pom.xml文件，内容如下
+```
+<?xml version="1.0" encoding="UTF-8"?>    
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">    
+    
+    <modelVersion>4.0.0</modelVersion>    
+    <groupId>org.apache</groupId>    
+    <artifactId>tomcat</artifactId>    
+    <name>tomcat</name>    
+    <version>1.0</version>    
+    <packaging>pom</packaging>    
+    
+    <modules>    
+        <module>apache-tomcat-8.5.93-src</module>
+    </modules>    
+</project>
+```
+在source文件创建pom文件
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+  
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.tomcat</groupId>
     <artifactId>Tomcat8.0</artifactId>
@@ -75,7 +98,7 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-
+      
       <!-- https://mvnrepository.com/artifact/org.easymock/easymock -->
       <dependency>
         <groupId>org.easymock</groupId>
@@ -93,3 +116,5 @@
       </dependency>
     </dependencies>
 </project>
+```
+## 4.添加VM 参数 -Dcatalina.home="/Users/hassan/develop/project/java-project/tomcat/apache-tomcat-8.5.93" 注意这里是VM 参数，不是program argument参数。
